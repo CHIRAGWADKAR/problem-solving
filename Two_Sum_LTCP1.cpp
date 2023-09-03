@@ -1,17 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int target=9;
-    int arr[] = {2, 7, 11, 15};
-    int len = sizeof(arr)/sizeof(arr[0]);
-
-    for(int i=0;i<len;i++) {
-        for(int j=i+1;j<len;j++) {
-            if(arr[i]+arr[j] == target) {
+vector<int> twoSum(vector<int>& nums, int target) {
+    int n = nums.size();
+    for(int i=0;i<n;i++) {
+        for(int j=i+1;j<n;j++) {
+            if(nums[i]+nums[j] == target) {
                 cout << "[" << i << "," << j << "]";
+                return {i, j};
             }
         }
     }
-    return -1;
+    cout << "[]";
+    return {};
+}
+
+int main() {
+    int target=9;
+    vector<int> nums{2, 7, 11, 15};
+    twoSum(nums, target);
 }

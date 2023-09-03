@@ -1,7 +1,6 @@
 /* LTCP 2 Palindrome Number */
 
 #include<bits/stdc++.h>
-#include<iostream>
 using namespace std;
 
 int main() {
