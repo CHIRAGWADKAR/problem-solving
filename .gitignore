@@ -1,6 +1,11 @@
-problem-solving/.vscode
-.vscode/c_cpp_properties.json
-.vscode/launch.json
-.vscode/settings.json
-.gitattributes
-.gitignore
+// problem-solving/.vscode
+// .vscode/c_cpp_properties.json
+// .vscode/launch.json
+// .vscode/settings.json
+// C++/problem-solving/.exe
+// .gitattributes
+// .gitignore
+// C++/Jump_Game_LTCP72.exe
+*.exe
+*.json
+*vscode
